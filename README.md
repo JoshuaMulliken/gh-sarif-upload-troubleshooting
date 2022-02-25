@@ -81,9 +81,9 @@ optional arguments:
    2. Check the status with `ghsarif <owner> <repo> check <id>`.
    3. If you see something refering to too many commit paths you can remove the optional `.runs[].results[].codeFlows` path from the sarif file with `cat <scan>.sarif | jq 'del(.runs[].results[].codeFlows)' > slimmed-<scan>.sarif`.
    
-        > Note:
-        >
-        > If you have found any other issues and found the solution please submit a PR
+> Note:
+>
+> If you have found any other issues and found the solution please submit a PR
 
 [1]: <https://github.com/github/codeql-action/tree/v1/upload-sarif> "Upload Sarif Action"
 [2]: <https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/uploading-a-sarif-file-to-github#uploading-a-code-scanning-analysis-with-github-actions>
